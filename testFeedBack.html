@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src='jquery.js'></script>
+	<script type="text/javascript" src="feedback.js"></script>
+	<style type="text/css">
+		html{
+			width: 100%;
+			height: 100%;
+		}
+		body{
+			position: relative;
+			margin: 0px 0px;
+			padding: 0px 0px;
+			border: none;
+		}
+		div.feedBackMessage{
+			width: 100%;
+			height: 30px;
+			font-size: 16px;
+			line-height: 30px;
+			text-align: center;
+			background-color: red;
+			color: white;
+			font-family: "Microsoft Yahei";
+			z-index: 9999;
+			position: absolute;
+			top: -200px;
+			left: 0px;
+			padding: 0px 0px;
+			margin: 0px 0px;
+			border: 0px 0px; 
+		}
+	</style>
+</head>
+<body>
+	<button id="showButton">Click</button>
+	<script type="text/javascript">
+		$("#showButton").click(function(){
+			$.feedBack("test","Try again!");
+		})
+	</script>
+</body>
+</html>
